@@ -1,0 +1,140 @@
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+body {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/bg-main.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg-main.jpg");
+  color: #eee;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+ul {
+  font-size: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  ul li .secondary-content {
+    float: none;
+    display: block;
+    margin-top: 10px;
+    line-height: 1.3;
+  }
+}
+
+.collection {
+  color: #222;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100%;
+}
+
+.card {
+  color: #222;
+}
+
+.artist-page {
+  padding: 30px 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .artist-page {
+    padding: 15px;
+    text-align: center;
+  }
+}
+
+.artist-page h2 {
+  font-size: 2.3rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.artist-logo {
+  width: 100%;
+}
+
+.back-home {
+  font-size: 1.2rem;
+}
+
+.p404 {
+  padding: 50px 70px;
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.filters {
+  background-color: #fff;
+  color: #222;
+  padding: 10px 25px;
+}
+
+.my-1 {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.filters h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.filters-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

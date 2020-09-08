@@ -1,0 +1,88 @@
+{{ define "content" }}
+
+    <div class="container">
+        <h1>Groupie Tackers</h1>
+
+        <div class="row">
+            <form>
+                <div class="input-field col s12">
+                    <input
+                            type="text"
+                            class="validate white-text"
+                            list="datalist"
+                            name="input"
+                            required
+                    />
+                    <label for="last_name">Search groups/members/locations/dates</label>
+                </div>
+            </form>
+        </div>
+
+{{/*        <datalist id="datalist">*/}}
+{{/*            {{ range . }}*/}}
+
+{{/*                <option value="{{ .Name }}">{{ .Name }} // Artists</option>*/}}
+{{/*                <option value="{{ .FirstAlbum }}">{{ .FirstAlbum }} // First Album</option>*/}}
+{{/*                <option value="{{ .CreationDate }}"*/}}
+{{/*                >{{ .CreationDate }} // Creation Date*/}}
+{{/*                </option*/}}
+{{/*                >*/}}
+
+{{/*                {{ range .Members }}*/}}
+{{/*                    <option value="{{ . }}">{{ . }} // Members</option>*/}}
+{{/*                {{ end }} {{ range .Location.Locations }}*/}}
+{{/*                    <option value="{{ . }}">{{ . }} // Locations</option>*/}}
+{{/*                {{ end }} {{ range .Relations.DatesLocations }}*/}}
+{{/*                    <option value="{{ . }}">{{ . }} // Relations</option>*/}}
+{{/*                {{ end }} {{ end }}*/}}
+{{/*        </datalist>*/}}
+
+        {{/*    <div class="list">*/}}
+        {{/*      {{ range . }}*/}}
+        {{/*        <div class="card z-3">*/}}
+        {{/*          <div class="card-image">*/}}
+        {{/*            <a href="/{{ .Id }}">*/}}
+        {{/*              <img src="{{ .Image }}"/>*/}}
+        {{/*            </a>*/}}
+        {{/*            <a*/}}
+        {{/*                    class="btn-floating btn-large halfway-fab waves-effect waves-light green"*/}}
+        {{/*                    href="/artist/{{ .Id }}"*/}}
+        {{/*            ><i class="material-icons">arrow_forward</i></a*/}}
+        {{/*            >*/}}
+        {{/*          </div>*/}}
+
+        {{/*          <div class="card-content">*/}}
+        {{/*            <p class="card-title">{{ .Name }}</p>*/}}
+        {{/*          </div>*/}}
+        {{/*        </div>*/}}
+        {{/*      {{ end }}*/}}
+        {{/*    </div>*/}}
+        {{/*  </div>*/}}
+        <div class="col s12 l8">
+            <div class="row">
+                {{ range . }}
+                    <div class="col s12 m6 l4">
+                        <div class="card z-3">
+                            <div class="card-image">
+                                <a href="/artist/{{ .Id }}">
+                                    <img src="{{ .Image }}"/>
+                                </a>
+                                <a
+                                        class="btn-floating btn-large halfway-fab waves-effect waves-light t"
+                                        href="/artist/{{ .Id }}"
+                                ><i class="material-icons">arrow_forward</i></a
+                                >
+                            </div>
+
+                            <div class="card-content">
+                                <p class="card-title">{{ .Name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+
+{{ end }}

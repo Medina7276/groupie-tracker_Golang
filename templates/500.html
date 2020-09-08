@@ -1,0 +1,20 @@
+{{define "content"}}
+<div class="container white black-text p404">
+  <h1>
+    Something went wrong on the server
+    <img
+      height="70"
+      src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/sleuth-or-spy_1f575.png"
+      alt="sad emoji"
+    />
+  </h1>
+  <h2>error 500</h2>
+  <h3>
+    <a href="/" class="back-home green-text">&#10229; Back to home</a>
+  </h3>
+
+  <code>
+    {{.}}
+  </code>
+</div>
+{{end}}
